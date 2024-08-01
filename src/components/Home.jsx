@@ -32,7 +32,7 @@ export default function Home() {
         <img
           src="/images/me.jpeg"
           alt="José David Amaya"
-          className="w-28 h-28 rounded-full border-4 border-blue-400 mb-4 m-auto"
+          className="w-28 h-28 rounded-full border-4 border-blue-400 mb-4 mx-auto"
         />
       </div>
       <Findme />
