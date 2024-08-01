@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="bg-custom-dark min-h-screen">
-      <Header toggleWindow={toggleWindow} />
+      <Header toggleWindow={toggleWindow} window={window} />
       {window === "home" && <Home />}
       {window === "about-me" && <Aboutme />}
       {window === "project" && <Projects />}
