@@ -1,6 +1,13 @@
 import PropTypes from "prop-types";
 
 export default function Home() {
+  const handleCVDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/documents/cv.pdf";
+    link.download = "CV-Jose-Amaya.pdf";
+    link.click();
+  };
+
   return (
     <main className="flex flex-col gap-10 p-4 mx-auto max-w-xl">
       <div className="flex justify-between items-center">
@@ -14,6 +21,13 @@ export default function Home() {
           <h2 className="text-lg sm:text-xl md:text-2xl text-white">
             Digital Craftsman ( Developer )
           </h2>
+          <button
+            onClick={handleCVDownload}
+            className="flex justify-between mt-10 items-center space-x-2 p-2 border-4 border-blue-400 rounded-xl hover:bg-blue-400 transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            <span className="text-lg text-white font-bold">Download CV</span>
+            <i className="fa-solid fa-file text-lg text-white font-bold"></i>
+          </button>
         </div>
         <img
           src="/images/me.jpeg"
@@ -74,7 +88,7 @@ const SocialMedia = (props) => {
   return (
     <button
       onClick={handleClick}
-      className="flex items-center space-x-2 p-2 border border-white rounded-xl hover:bg-blue-400 transition duration-300 ease-in-out transform hover:scale-105"
+      className="flex items-center space-x-2 p-2 border-2 border-white rounded-xl hover:bg-blue-400 transition duration-300 ease-in-out transform hover:scale-105"
     >
       <div className="text-white text-lg">{icon}</div>
       <span className="text-lg text-white">{title}</span>
