@@ -1,7 +1,14 @@
 import PropTypes from "prop-types";
 
 export default function Header(props) {
-  const { toggleWindow } = props;
+  const { toggleWindow, window } = props;
+
+  const linkClasses = (link) =>
+    `hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg ${
+      window === link
+        ? "border-b-2 border-blue-400 text-blue-400"
+        : "text-white hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg"
+    }`;
 
   return (
     <header className="flex justify-between items-center p-4 mx-auto max-w-3xl gap-4">
@@ -12,21 +19,18 @@ export default function Header(props) {
         </h2>
       </div>
       <nav className="space-x-5">
-        <a
-          onClick={() => toggleWindow("home")}
-          className="text-white hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg"
-        >
+        <a onClick={() => toggleWindow("home")} className={linkClasses("home")}>
           <i className="fa-solid fa-house"></i> Home
         </a>
         <a
           onClick={() => toggleWindow("about-me")}
-          className="text-white hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg"
+          className={linkClasses("about-me")}
         >
           <i className="fa-solid fa-user"></i> About me
         </a>
         <a
           onClick={() => toggleWindow("project")}
-          className="text-white hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg"
+          className={linkClasses("project")}
         >
           <i className="fa-solid fa-keyboard"></i> Projects
         </a>
@@ -44,4 +48,5 @@ export default function Header(props) {
 
 Header.propTypes = {
   toggleWindow: PropTypes.func.isRequired,
+  window: PropTypes.string.isRequired,
 };
