@@ -4,7 +4,7 @@ export default function Header(props) {
   const { toggleWindow, window } = props;
 
   const linkClasses = (link) =>
-    `hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg ${
+    `hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg transition duration-300 ease-in-out ${
       window === link
         ? "border-b-2 border-blue-400 text-blue-400"
         : "text-white hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg"
@@ -18,7 +18,7 @@ export default function Header(props) {
           Joki
         </h2>
       </div>
-      <nav className="space-x-5">
+      <nav className="space-x-7">
         <a onClick={() => toggleWindow("home")} className={linkClasses("home")}>
           <i className="fa-solid fa-house"></i> Home
         </a>
