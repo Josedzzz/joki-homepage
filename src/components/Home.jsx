@@ -1,4 +1,3 @@
-import Findme from "./Findme";
 import SkillPanel from "./SkillPanel";
 
 export default function Home() {
@@ -37,7 +36,6 @@ export default function Home() {
         />
       </div>
       <SkillPanel />
-      <Findme />
     </main>
   );
 }
