@@ -11,14 +11,14 @@ export default function Header(props) {
     }`;
 
   return (
-    <header className="flex justify-between items-center p-4 mx-auto max-w-3xl gap-4 appearr">
-      <div className="flex items-center space-x-2">
+    <header className="flex justify-between items-center p-2 mx-auto max-w-3xl gap-4 appearr">
+      <div className="flex items-center space-x-1">
         <i className="fa-solid fa-terminal text-blue-400 text-lg sm:text-xl md:text-2xl"></i>
         <h2 className="text-xl sm:text-3xl md:text-4xl text-white font-bold">
           Joki
         </h2>
       </div>
-      <nav className="space-x-2 sm:space-x-7">
+      <nav className="space-x-4 sm:space-x-7">
         <a onClick={() => toggleWindow("home")} className={linkClasses("home")}>
           <i className="fa-solid fa-house"></i> Home
         </a>
@@ -39,7 +39,7 @@ export default function Header(props) {
           className="text-white hover:text-blue-400 font-bold text-sm sm:text-md md:text-lg"
           target="_blank"
         >
-          <i className="fa-brands fa-github"></i> Source
+          <i className="fa-brands fa-github"></i>
         </a>
       </nav>
     </header>
