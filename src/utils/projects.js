@@ -45,6 +45,6 @@ export const projects = [
     image: "/images/projects/jokipage.png",
     title: "Joki Homepage",
     text: "This project is my personal portfolio website, built with HTML, CSS, JavaScript, React, and TailwindCSS. It showcases my work, skills, and experiences, providing an interactive and visually appealing way for visitors to learn more about me and my projects.",
-    reference: "https://github.com/Josedzzz/TiendaJS",
+    reference: "https://github.com/Josedzzz/joki-homepage",
   },
 ];
