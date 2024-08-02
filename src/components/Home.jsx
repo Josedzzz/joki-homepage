@@ -8,6 +8,13 @@ export default function Home() {
     link.click();
   };
 
+  const handleCVESDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/documents/cv-es.pdf";
+    link.download = "CV-Jose-Amaya-ES";
+    link.click();
+  };
+
   return (
     <main className="flex flex-col gap-10 p-4 mx-auto max-w-xl appear-bottom">
       <div className="flex justify-between items-center">
@@ -23,9 +30,20 @@ export default function Home() {
           </h2>
           <button
             onClick={handleCVDownload}
-            className="flex justify-between mt-10 items-center space-x-2 p-2 border-4 border-blue-400 rounded-xl hover:bg-blue-400 transition duration-300 ease-in-out transform hover:scale-105"
+            className="flex justify-between mt-4 items-center space-x-2 p-2 border-4 border-blue-400 rounded-xl hover:bg-blue-400 transition duration-300 ease-in-out transform hover:scale-105"
           >
-            <span className="text-lg text-white font-bold">Download CV</span>
+            <span className="text-lg text-white font-bold">
+              Download CV - English
+            </span>
+            <i className="fa-solid fa-file text-lg text-white font-bold"></i>
+          </button>
+          <button
+            onClick={handleCVESDownload}
+            className="flex justify-between mt-4 items-center space-x-2 p-2 border-4 border-blue-400 rounded-xl hover:bg-blue-400 transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            <span className="text-lg text-white font-bold">
+              Download CV - Spanish
+            </span>
             <i className="fa-solid fa-file text-lg text-white font-bold"></i>
           </button>
         </div>
