@@ -1,6 +1,7 @@
 // src/utils/skills.js
 export const skills = [
   { icon: "fa-brands fa-java", title: "Java" },
+  { icon: "fa-solid fa-mug-hot", title: "JavaFX" },
   { icon: "fa-brands fa-html5", title: "HTML" },
   { icon: "fa-brands fa-css3-alt", title: "CSS" },
   { icon: "fa-brands fa-js", title: "JavaScript" },
