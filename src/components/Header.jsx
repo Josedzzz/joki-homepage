@@ -18,7 +18,7 @@ export default function Header(props) {
           Joki
         </h2>
       </div>
-      <nav className="space-x-7">
+      <nav className="space-x-2 sm:space-x-7">
         <a onClick={() => toggleWindow("home")} className={linkClasses("home")}>
           <i className="fa-solid fa-house"></i> Home
         </a>
