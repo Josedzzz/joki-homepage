@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Aboutme from "./components/Aboutme";
-import Projects from "./components/Projects";
+import ProjectsPanel from "./components/ProjectsPanel";
 
 function App() {
   const [window, setWindow] = useState("home");
@@ -16,7 +16,7 @@ function App() {
       <Header toggleWindow={toggleWindow} window={window} />
       {window === "home" && <Home />}
       {window === "about-me" && <Aboutme />}
-      {window === "project" && <Projects />}
+      {window === "project" && <ProjectsPanel />}
     </div>
   );
 }
