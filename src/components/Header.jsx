@@ -11,7 +11,7 @@ export default function Header(props) {
     }`;
 
   return (
-    <header className="flex justify-between items-center p-4 mx-auto max-w-3xl gap-4">
+    <header className="flex justify-between items-center p-4 mx-auto max-w-3xl gap-4 appearr">
       <div className="flex items-center space-x-2">
         <i className="fa-solid fa-terminal text-blue-400 text-lg sm:text-xl md:text-2xl"></i>
         <h2 className="text-xl sm:text-3xl md:text-4xl text-white font-bold">

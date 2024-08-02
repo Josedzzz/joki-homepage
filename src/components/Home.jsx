@@ -9,7 +9,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col gap-10 p-4 mx-auto max-w-xl">
+    <main className="flex flex-col gap-10 p-4 mx-auto max-w-xl appear-bottom">
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
           <h1 className="text-xl sm:text-3xl md:text-4xl text-white font-bold">

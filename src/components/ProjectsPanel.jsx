@@ -3,7 +3,7 @@ import Project from "./Project";
 
 export default function ProjectsPanel() {
   return (
-    <main className="flex flex-col gap-10 p-4 mx-auto max-w-xl">
+    <main className="flex flex-col gap-10 p-4 mx-auto max-w-xl appear-bottom">
       <h2 className="text-xl sm:text-xl md:text-2xl text-blue-400 font-bold">
         Projects and Collaborations
       </h2>
