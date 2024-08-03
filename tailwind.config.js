@@ -5,11 +5,11 @@ export default {
     extend: {
       colors: {
         "custom-dark": "#131515",
-        "custom-dark-translucent": "rgba(19, 21, 21, 0.5)", // Fondo semitransparente
+        "custom-dark-translucent": "rgba(19, 21, 21, 0.5)",
       },
       backdropBlur: {
         none: "none",
-        blur: "blur(10px)", // Filtro de difuminado
+        blur: "blur(10px)",
       },
     },
   },
