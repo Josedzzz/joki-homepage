@@ -3,7 +3,7 @@ import SocialMedia from "./SocialMedia";
 
 export default function Findme() {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="mt-12 flex flex-col gap-2">
       <h2 className="text-xl sm:text-xl md:text-2xl text-blue-400 font-bold">
         On the web
       </h2>
