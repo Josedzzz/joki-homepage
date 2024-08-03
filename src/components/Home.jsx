@@ -48,7 +48,7 @@ export default function Home() {
           </button>
         </div>
         <img
-          src="/images/me.jpeg"
+          src="public/images/me.jpeg"
           alt="José David Amaya"
           className="w-28 h-28 rounded-full border-4 border-blue-400 mb-4"
         />
