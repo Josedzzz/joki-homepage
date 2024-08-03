@@ -11,7 +11,7 @@ export default function Home() {
   const handleCVESDownload = () => {
     const link = document.createElement("a");
     link.href = "documents/cv-es.pdf";
-    link.download = "CV-Jose-Amaya-ES";
+    link.download = "CV-Jose-Amaya-ES.pdf";
     link.click();
   };
 
