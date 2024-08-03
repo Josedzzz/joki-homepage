@@ -3,14 +3,14 @@ import SkillPanel from "./SkillPanel";
 export default function Home() {
   const handleCVDownload = () => {
     const link = document.createElement("a");
-    link.href = "documents/cv.pdf";
+    link.href = "cv.pdf";
     link.download = "CV-Jose-Amaya.pdf";
     link.click();
   };
 
   const handleCVESDownload = () => {
     const link = document.createElement("a");
-    link.href = "documents/cv-es.pdf";
+    link.href = "cv-es.pdf";
     link.download = "CV-Jose-Amaya-ES.pdf";
     link.click();
   };
