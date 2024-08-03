@@ -19,4 +19,4 @@
 
 ## Live Demo
 
-You can visit the live version of the Joki-homepage [here](https://joki-homepage.netlify.app/).
+You can visit the live version of the Joki-homepage [here](https://josedzzz.github.io/joki-homepage/).
