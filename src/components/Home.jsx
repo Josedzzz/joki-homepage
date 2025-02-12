@@ -3,24 +3,24 @@ import SkillPanel from "./SkillPanel";
 export default function Home() {
   const handleCVDownload = () => {
     const link = document.createElement("a");
-    link.href = "cv.pdf";
+    link.href = "cv-Jose-Amaya.pdf";
     link.download = "CV-Jose-Amaya.pdf";
     link.click();
   };
 
   const handleCVESDownload = () => {
     const link = document.createElement("a");
-    link.href = "cv-es.pdf";
+    link.href = "cv-Jose-Amaya-ES.pdf";
     link.download = "CV-Jose-Amaya-ES.pdf";
     link.click();
   };
 
   return (
-    <main className="flex flex-col gap-10 p-4 mx-auto max-w-xl appear-bottom">
+    <main className="flex items-center justify-center min-h-[calc(100vh-4rem)] flex-col gap-10 p-4 mx-auto max-w-xl appear-bottom">
       <div className="mt-12 flex justify-between items-center">
         <div className="flex flex-col">
           <h1 className="text-xl sm:text-3xl md:text-4xl text-white font-bold">
-            Hello, I'm
+            Hello, I am
           </h1>
           <span className="text-xl sm:text-3xl md:text-4xl text-blue-400 font-bold">
             José David Amaya
@@ -47,11 +47,6 @@ export default function Home() {
             <i className="fa-solid fa-file text-lg text-white font-bold"></i>
           </button>
         </div>
-        <img
-          src="images/me.jpeg"
-          alt="José David Amaya"
-          className="w-28 h-28 rounded-full border-4 border-blue-400 mb-4"
-        />
       </div>
       <SkillPanel />
     </main>
