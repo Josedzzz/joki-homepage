@@ -11,5 +11,5 @@ export const skills = [
   { icon: "fa-brands fa-linux", title: "Linux" },
   { icon: "fa-brands fa-docker", title: "Docker" },
   { icon: "fa-brands fa-git-alt", title: "Git" },
-  { icon: "fa-brands fa-python", title: "Python" },
+  { icon: "fa-solid fa-database", title: "MySQL" },
 ];

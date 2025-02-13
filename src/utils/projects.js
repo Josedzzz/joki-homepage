@@ -1,5 +1,11 @@
 export const projects = [
   {
+    image: "images/projects/competitive-programming.png",
+    title: "Competitive programming repo",
+    text: "Developed a repository organizing solutions for competitive programming problems in C++ from tournaments and Leetcode.",
+    reference: "https://github.com/Josedzzz/competitive-programming",
+  },
+  {
     image: "images/projects/apod.png",
     title: "APOD Project",
     text: "This project was built using HTML, CSS, JavaScript, React, and the NASA API. It displays the Astronomy Picture of the Day (APOD) along with its description, updating daily with new images and information from NASA.",
@@ -10,12 +16,6 @@ export const projects = [
     title: "Jokify",
     text: "This collaborative project is a music player built with Java and JavaFX. It allows an admin to add artists and songs, and view overall app statistics. Users can create accounts, play music, and add songs to their favorite playlists.",
     reference: "https://github.com/juanjarce/Jokify",
-  },
-  {
-    image: "images/projects/swoleyfit.png",
-    title: "SwoleyFit",
-    text: "This gym routine app offers daily workout plans for various fitness levels and goals. Built with HTML, CSS, JavaScript, React, and Tailwind CSS, it features a user-friendly interface for easy navigation. The project is based on a tutorial from a YouTuber, helping users stay fit and achieve their fitness goals.",
-    reference: "https://github.com/Josedzzz/swoleyFit-react-project",
   },
   {
     image: "images/projects/pigjs.jpeg",
